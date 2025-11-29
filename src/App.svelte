@@ -1,7 +1,7 @@
 <script lang="ts">
-	let element: HTMLElement | null = null; // fine.
-	let stateElement = $state<HTMLElement | null>(null); // Unexpected top-level browser global variable "HTMLElement". (eslint svelte/no-top-level-browser-globals)
+	/*
+	* Cannot use `await` in deriveds and template expressions, or at the top level of a component, unless the `experimental.async` compiler option is `true`
+https://svelte.dev/e/experimental_async(experimental_async) (eslint svelte/valid-compile)
+	*/
+	await new Promise(() => {});
 </script>
-
-<span bind:this={element}></span>
-<span bind:this={stateElement}>Hello World!</span>
