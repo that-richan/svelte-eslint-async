@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "types": ["svelte", "vite/client"]
+  },
+  "include": ["src/**/*.svelte", "src/**/*.svelte.ts", "src/**/*.ts"]
+}
